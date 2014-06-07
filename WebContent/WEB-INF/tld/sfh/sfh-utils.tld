@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd" version="2.0">
+  <description>SFH Tag Library</description>
+  <display-name>SFHTags</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>sfh</short-name>
+  <uri>/WEB-INF/tld/sfh/sfh-utils</uri>
+  <tag>
+    <description>
+        Adaptación del htmloptionsCollection para que liste opciones de DominioService
+        sin necesidad de agregar esos listados al form
+      </description>
+    <name>dominioOptions</name>
+    <tag-class>gob.osinerg.sfh.common.taglib.DominioOptionsTag</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+      <description>
+            Nombre del dominio para ser mostrado como opciones.
+        </description>
+      <name>dominio</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>filter</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>style</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>styleClass</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>
+        Combo de Ubigeo
+      </description>
+    <name>ubigeo</name>
+    <tag-class>gob.osinerg.sfh.common.taglib.UbigeoTag</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+      <description>
+            Nombre del bean del cual sacar el lod valores indicador por los properties.
+      </description>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Nombre del atributo que contiene o contendrá el id del Ubigeo.
+      </description>
+      <name>property</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Nombre del atributo que contiene o contendrá el id del Departamento.
+      </description>
+      <name>idDepartamentoProperty</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Nombre del atributo que contiene o contendrá el id de la Provincia.
+      </description>
+      <name>idProvinciaProperty</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Nombre del atributo que contiene o contendrá el id del Distrito.
+      </description>
+      <name>idDistritoProperty</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Valor por defecto del id del Ubigeo.
+      </description>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+            Para deshabilitar los combos.
+      </description>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>

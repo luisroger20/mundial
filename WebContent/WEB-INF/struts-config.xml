@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+<!-- ========================================= Definiciones de los Form Bean -->
+    <form-beans>
+    	<form-bean name="UsuarioActionForm" type="mundial.web.form.UsuarioActionForm"/>
+    	<form-bean name="RegistroActionForm" type="mundial.web.form.RegistroActionForm"/>
+    </form-beans>
+
+<!-- ====================================== Definiciones de Global Exception -->
+    <global-exceptions>
+    </global-exceptions>
+
+<!-- ======================================== Definición del Global Forward  -->
+    <global-forwards>
+        <forward name="usuarioLogin"  path="/usuarioLogin.do"/>
+    </global-forwards>
+
+<!-- ==================================== Definiciones de los Action Mapping -->
+    <action-mappings>
+    	<action input="/usuarioLogin.jsp" name="UsuarioActionForm" path="/login" scope="session" type="mundial.web.action.UsuarioAction">
+            <forward name="success" path="/inicioServlet"/>
+            <forward name="false" path="/mensaje.jsp"/>
+        </action>
+        
+		<action path="/usuarioLogin" forward="/usuarioLogin.jsp"/>
+
+		<action input="/registro.jsp"  name="RegistroActionForm"  path="/logRegistro" scope="request"    type="mundial.web.action.RegistroAction">
+        <forward name="msg" path="/mensaje.jsp"/>
+        </action>
+     
+	 </action-mappings>
+	 
+    
+    
+
+<!-- ========================================== Configuración del Controller -->
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+<!-- ================================= Definiciones de los Message Resources -->
+    <message-resources parameter="mundial.resources.MessageResources" />
+
+<!-- =========================================== Configuraciones de Plug In -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+      <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+      <set-property property="moduleAware" value="true" />
+    </plug-in>
+
+  <!-- ==================================================== Validator plugin -->
+  	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    	<set-property
+        	property="pathnames"
+        	value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+  	</plug-in>
+</struts-config>
+

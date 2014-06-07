@@ -1,0 +1,197 @@
+table.resultadosTABLE {
+	border-top: 1px solid #000000;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1px solid #000000;
+	padding:0;
+}
+
+body {
+	background-color: #F6FBFF;
+	font-family: Arial;
+	font-size: 12px;
+	color: #004B97;
+	font-weight: normal;
+}
+/*
+TH.resultadosTH {
+	color: #E9E9E9;
+	background-color: #004B97;
+	border-top: none;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: none;
+}*/
+
+TH {
+	color: #E9E9E9;
+	background-color: #004B97;
+	border-top: none;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: none;
+}
+td.resultadosTD {
+	color: #000000;
+	background-color: #C1CBDD;
+	border-top: none;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: none;
+}
+
+.botones {
+	color: #003264;
+	background-color: #C8C8C8;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	cursor: hand;
+	
+}
+
+/*
+.botones {
+	color: #003264;
+	background-color: #c8c8c8;
+	font-weight: bold;
+}
+*/
+a:link {
+	color: #000000;
+	font-weight: bold;
+}
+a:visited {
+	color: #004B97;
+	font-weight: bold;
+}
+a:hover {
+	font-weight: bold;
+	color: #006CD9;
+}
+a:active {
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.tituloModulo {
+	font-family: Arial;
+	font-size: 18px;
+	color: #E9E9E9;
+}
+.colorPlomo {
+	color: #E9E9E9;
+}
+.titulo2 {
+	font-family: Arial;
+	font-size: 18px;
+	color: #004B97;
+}
+.titulo3 {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+input.button, button {font-family:verdana, arial, helvetica sans-serif;font-size:8pt;
+             background:#c4d6e2;color:#013470;border-width:1px;border-style:solid;CURSOR: hand;}
+
+.pagebanner {
+	background-color: #E9E9E9;
+	border: none;
+	padding: 2px 4px;
+	width: 100%;
+	margin-top: 0px;
+	display:block;
+	text-align: right;
+      font-size:8pt
+}
+
+.pagelinks {
+	background-color: #E9E9E9;
+	border: none;
+	padding: 2px 4px;
+	width: 100%;
+	display:block;
+	margin-bottom: 0px;
+	text-align: right;
+      font-size:8pt;
+}
+
+.texto{
+      font-family:Arial,Helvetica,Geneva,sans-serif;
+      font-size:10pt;
+      color:#336699;
+      font-weight:normal
+}
+.tituloHijo{
+      font-family:Arial;
+      font-size:12pt;
+      color:#336699;
+	  font-weight:bold;
+}
+
+
+
+.paginado {font-family:Verdana, Arial, Helvetica, sans-serif;font-size:7pt;color:#000000;text-align: right;display:block;
+      padding: 2px 4px;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.error {
+	FONT-SIZE: 11px; COLOR: #ff0000; FONT-FAMILY: verdana
+}
+.message {
+	FONT-SIZE: 11px; COLOR: #284b78; FONT-FAMILY: verdana
+}
+
+<!--  Para los Tabs... -->
+.dT {
+	FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.lnkBold {
+	FONT-SIZE: 10px;CURSOR: hand; COLOR: #ffffff; BACKGROUND-COLOR: #004B97; TEXT-DECORATION: none
+}
+.dTW {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+<!--  Estilo de Grilla... -->
+FORM {
+}
+TABLE {
+	FONT-SIZE: 10px; COLOR: #003399; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+}
+
+.textoNegrita{
+      font-family:Arial,Helvetica,Geneva,sans-serif;
+      font-size:10pt;
+      color:#000000;
+      font-weight:normal
+}
+
+table.its thead tr {
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #92B9D3;
+}
+
+table.its tr.even {
+    background-color: #EBF1F4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #000000;
+}
+
+table.its tr.odd {
+	background-color: #F6FBFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}

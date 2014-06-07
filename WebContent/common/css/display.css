@@ -1,0 +1,76 @@
+.centerText {
+	text-align: center;
+}
+
+table.stgrid {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	width: 100%;
+}
+
+table.stgrid thead tr,
+table.stgrid thead tr:hover {
+	background-color: #92b9d3;
+}
+table.stgrid tr.even {
+	background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+table.stgrid tr.odd {
+	background-color: #f6fbff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+table.stgrid caption {
+	width: 100%;
+	text-align: right;
+	margin-bottom: 3px;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+table.stgrid th.sorted a,
+table.stgrid th.sortable a {
+	background-repeat:no-repeat;
+	background-position: right;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+table.stgrid th.sortable a {
+	background-image: url(../images/arrow_off.png);
+}
+table.stgrid th.order1 a {
+	background-image: url(../images/arrow_down.png);
+}
+table.stgrid th.order2 a {
+	background-image: url(../images/arrow_up.png);
+}
+
+table.stgrid tr:hover {
+	background-color: #92b9d3;
+}
+
+.pagelinks {
+	width:100%;
+	text-align:right;
+	font-size: 11px;
+	background-color: #92b9d3;
+	color: black;
+	margin-bottom:5px;
+	font-weight: bold;
+}
+
+.pagelinks a, .pagelinks a:visited {
+	color: #006699;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pagelinks a:hover {
+  text-decoration: underline;
+}

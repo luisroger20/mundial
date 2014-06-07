@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>common</shortname>
+<uri>http://www.gmd.com.pe/tlds</uri>
+<tag>
+<name>catSelect</name>
+<tagclass>com.smf.common.tags.CatalogoSelect</tagclass>
+<bodycontent>JSP</bodycontent>
+<attribute>
+	<name>collection</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>select</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>type</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>style</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>onChange</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>onfocus</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>estado</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>orden</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>disabled</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>tipo1</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>tipo2</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>tipo3</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>condicion</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+<tag>
+<name>catLabel</name>
+<tagclass>com.smf.common.tags.CatalogoLabel</tagclass>
+<bodycontent>JSP</bodycontent>
+<attribute>
+	<name>collection</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>type</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>tipo1</name>
+	<required>false</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+<tag> 
+<name>Tab</name>
+<tagclass>pe.gob.mss.satt.common.tags.TabTag</tagclass>
+<bodycontent>JSP</bodycontent>
+<attribute>
+	<name>name</name>
+	<required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+	<name>page</name>
+ 	<required>true</required>
+ 	<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+<tag> 
+<name>TabContainer</name>
+<tagclass>pe.gob.mss.satt.common.tags.TabContainer</tagclass>
+<bodycontent>JSP</bodycontent>
+<attribute>
+ 	<name>action</name>
+ 	<required>true</required>
+ 	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+ 	<name>styleOn</name>
+ 	<required>false</required>
+ 	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+ 	<name>styleOff</name>
+ 	<required>false</required>
+ 	<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+ 	<name>jsfunction</name>
+ 	<required>false</required>
+ 	<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+<tag> 
+<name>TabSelected</name>
+<tagclass>pe.gob.mss.satt.common.tags.TabSelected</tagclass>
+<bodycontent>JSP</bodycontent>
+</tag>
+</taglib>
