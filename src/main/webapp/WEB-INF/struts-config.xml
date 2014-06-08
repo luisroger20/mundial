@@ -42,7 +42,7 @@
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
 
 <!-- ================================= Definiciones de los Message Resources -->
-    <message-resources parameter="mundial.resources.MessageResources" />
+    <message-resources parameter="mundial.web.resources.MessageResources" />
 
 <!-- =========================================== Configuraciones de Plug In -->
     <plug-in className="org.apache.struts.tiles.TilesPlugin" >
