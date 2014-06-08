@@ -134,6 +134,14 @@
                 <version>2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <resources>
+<resource>
+      <directory>${project.build.directory}/src/main/java</directory>
+    <includes>
+                <include>**/*.properties</include>
+            </includes>
+    </resource>
+ </resources>
                 </configuration>
             </plugin>
             <plugin>
