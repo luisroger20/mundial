@@ -1,4 +1,4 @@
-package mundial.util;
+package mundial.web.util;
 
 import java.io.Serializable;
 import java.sql.Connection;

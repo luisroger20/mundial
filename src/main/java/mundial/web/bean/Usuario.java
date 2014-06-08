@@ -1,4 +1,4 @@
-package mundial.bean;
+package mundial.web.bean;
 
 import java.io.Serializable;
 

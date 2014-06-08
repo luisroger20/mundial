@@ -1,6 +1,6 @@
 package mundial.web.action;
 
-import mundial.dao.*;
+import mundial.web.dao.*;
 import mundial.web.form.*;
 import javax.servlet.http.*;
 import org.apache.struts.action.*;

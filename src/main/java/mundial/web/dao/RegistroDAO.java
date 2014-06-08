@@ -5,12 +5,12 @@
  *
  */
 
-package mundial.dao;
+package mundial.web.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import mundial.util.UtilConexion;
+import mundial.web.util.UtilConexion;
 import mundial.web.form.*;
 
 /**

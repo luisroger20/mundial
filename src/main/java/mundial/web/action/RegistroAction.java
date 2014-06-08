@@ -14,7 +14,7 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionForward;
-import mundial.dao.*;
+import mundial.web.dao.*;
 import mundial.web.form.*;
 /**
  *
@@ -31,14 +31,14 @@ public class RegistroAction extends Action {
         String accion = request.getParameter("action");
         
         if (accion == null) {
-            request.getSession().setAttribute("mensaje", "llegó nulo!");
+            request.getSession().setAttribute("mensaje", "llegï¿½ nulo!");
         } else {
             if (accion.compareTo("INS") == 0) {
             	String existe = RegistroDAO.selecciona((RegistroActionForm) form);
             	if (existe=="false"){
                  String mensaje = RegistroDAO.inserta((RegistroActionForm) form);
                   if (mensaje == "true") {
-                    request.getSession().setAttribute("mensaje", "Exito en grabación del usuario: "+request.getParameter("nick"));
+                    request.getSession().setAttribute("mensaje", "Exito en grabaciï¿½n del usuario: "+request.getParameter("nick"));
                 } else {
                     request.getSession().setAttribute("mensaje", mensaje);
                 }
@@ -51,7 +51,7 @@ public class RegistroAction extends Action {
                 String mensaje = RegistroDAO.elimina((RegistroActionForm) form);
                 
                 if (mensaje == "true") {
-                    request.getSession().setAttribute("mensaje", "Exito en eliminación!");
+                    request.getSession().setAttribute("mensaje", "Exito en eliminaciï¿½n!");
                 } else {
                     request.getSession().setAttribute("mensaje", mensaje);
                 }
@@ -61,7 +61,7 @@ public class RegistroAction extends Action {
                 String mensaje = RegistroDAO.modifica((RegistroActionForm) form);
                 
                 if (mensaje == "true") {
-                    request.getSession().setAttribute("mensaje", "Exito en actualización!");
+                    request.getSession().setAttribute("mensaje", "Exito en actualizaciï¿½n!");
                 } else {
                     request.getSession().setAttribute("mensaje", mensaje);
                 }

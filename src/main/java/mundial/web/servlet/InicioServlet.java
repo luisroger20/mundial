@@ -1,8 +1,8 @@
-package mundial.servlet;
+package mundial.web.servlet;
 
-import mundial.util.UtilConexion;
+import mundial.web.util.UtilConexion;
 import mundial.web.form.UsuarioActionForm;
-import mundial.dao.*;
+import mundial.web.dao.*;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,9 +13,9 @@ import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 
-import mundial.bean.Apuesta;
-import mundial.bean.Partido;
-import mundial.bean.Usuario;
+import mundial.web.bean.Apuesta;
+import mundial.web.bean.Partido;
+import mundial.web.bean.Usuario;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -350,7 +350,7 @@ public class InicioServlet extends HttpServlet implements Servlet{
 		}
 	}	
 	private void validar(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception{
-		//Variables de identificación de usuario
+		//Variables de identificaciï¿½n de usuario
 		String login = null;
 		String password = null;
 		String nombre = null;
@@ -361,7 +361,7 @@ public class InicioServlet extends HttpServlet implements Servlet{
 		List listaUsuario = null;
 		Usuario us = new Usuario();
 		try{
-			//Obtiene los parámetros de usuario
+			//Obtiene los parï¿½metros de usuario
 			login = request.getParameter("nick");
 			password = request.getParameter("password");
 			tipo = request.getParameter("tipo");
@@ -394,10 +394,10 @@ public class InicioServlet extends HttpServlet implements Servlet{
 	}
 
 	private void actualizarLista(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception{
-		//Variables de identificación de usuario
+		//Variables de identificaciï¿½n de usuario
 		List listaPartidos = new ArrayList();
 		try{
-			//Obtiene los parámetros de usuario
+			//Obtiene los parï¿½metros de usuario
 
 			listaPartidos = consultarListaPartido(null);			
 			session.setAttribute("ListaPartido", listaPartidos);
@@ -413,7 +413,7 @@ public class InicioServlet extends HttpServlet implements Servlet{
 	}
 	
 	private void validaUsuario(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception{
-		//Variables de identificación de usuario
+		//Variables de identificaciï¿½n de usuario
 		List listaPartidos = new ArrayList();
 		UsuarioDAO usuarioDAO= new UsuarioDAO();
 		String usuario = "";
@@ -422,7 +422,7 @@ public class InicioServlet extends HttpServlet implements Servlet{
 		List listaUsuario = null;
 		Usuario us = new Usuario();
 		try{
-			//Obtiene los parámetros de usuario
+			//Obtiene los parï¿½metros de usuario
 			usuario = request.getParameter("nick");
 			password = request.getParameter("password");
 			

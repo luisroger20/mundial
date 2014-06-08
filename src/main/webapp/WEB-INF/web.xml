@@ -64,7 +64,7 @@
   	<servlet>
     	<display-name>InicioServlet</display-name>
     	<servlet-name>InicioServlet</servlet-name>
-     	<servlet-class>mundial.servlet.InicioServlet</servlet-class>
+     	<servlet-class>mundial.web.servlet.InicioServlet</servlet-class>
   	</servlet>	
   	
    <servlet-mapping>
